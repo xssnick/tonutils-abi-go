@@ -1,0 +1,2857 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "LotsOfGetters",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "IncreaseCounter"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "ResetCounterAlias"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "ResetCounter"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "TransferNotification",
+      "type_args_ty_idx": [
+        9
+      ]
+    },
+    {
+      "kind": "genericT",
+      "name_t": "PayloadT"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "TransferNotification",
+      "type_args_ty_idx": [
+        16
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Storage@me"
+    },
+    {
+      "kind": "callable"
+    },
+    {
+      "kind": "addressAny"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "PartReply"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "tuple"
+    },
+    {
+      "kind": "unknown"
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 23
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "NestedPartReply"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        4,
+        25
+      ]
+    },
+    {
+      "kind": "remaining"
+    },
+    {
+      "kind": "intN",
+      "n": 100
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        27,
+        1,
+        28
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "dict"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 3
+    },
+    {
+      "kind": "string"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        20,
+        21,
+        22,
+        29,
+        30,
+        32,
+        32
+      ]
+    },
+    {
+      "kind": "varintN",
+      "n": 32
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        30
+      ]
+    },
+    {
+      "kind": "intN",
+      "n": 8
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 36
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Empty"
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "Color"
+    },
+    {
+      "kind": "uintN",
+      "n": 2
+    },
+    {
+      "kind": "EnumRef",
+      "enum_name": "E0Max"
+    },
+    {
+      "kind": "uintN",
+      "n": 256
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        39,
+        41
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": []
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "PackOptions"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        34,
+        6,
+        35,
+        3,
+        37,
+        38,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 1
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 6
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 2
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 4
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 5
+    },
+    {
+      "kind": "addressOpt"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 22
+    },
+    {
+      "kind": "bitsN",
+      "n": 16
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 54
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 37
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 37
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 57
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        47
+      ]
+    },
+    {
+      "kind": "genericT",
+      "name_t": "T"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        60
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        51
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias2",
+      "type_args_ty_idx": [
+        62
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias1",
+      "type_args_ty_idx": [
+        62
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWrapper",
+      "type_args_ty_idx": [
+        62
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        62
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWrapper",
+      "type_args_ty_idx": [
+        60
+      ]
+    },
+    {
+      "kind": "genericT",
+      "name_t": "K"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias1",
+      "type_args_ty_idx": [
+        68
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWrapper",
+      "type_args_ty_idx": [
+        68
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias2",
+      "type_args_ty_idx": [
+        60
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias1",
+      "type_args_ty_idx": [
+        60
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        36
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        1,
+        73
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 74
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 32
+    },
+    {
+      "kind": "nullLiteral"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        47,
+        48,
+        31,
+        49,
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        58,
+        59,
+        63,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithCells"
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "MyInt32"
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 80
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        8
+      ]
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 82
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 83
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias2",
+      "type_args_ty_idx": [
+        10
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias1",
+      "type_args_ty_idx": [
+        10
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWrapper",
+      "type_args_ty_idx": [
+        10
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        10
+      ]
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 85
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 89
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 8,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 46,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 10,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 48,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 2
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 91
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 30
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 39
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 45
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 36,
+      "value_ty_idx": 6
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 36,
+      "value_ty_idx": 5
+    },
+    {
+      "kind": "mapKV",
+      "key_ty_idx": 7,
+      "value_ty_idx": 39
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 98,
+      "stack_type_id": 129,
+      "stack_width": 2
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        79,
+        95,
+        96,
+        97,
+        99,
+        99
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WrapperN",
+      "type_args_ty_idx": [
+        6
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WrapperN",
+      "type_args_ty_idx": [
+        60
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 60
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WrapperN",
+      "type_args_ty_idx": [
+        2
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WrapperN",
+      "type_args_ty_idx": [
+        7
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WrapperN",
+      "type_args_ty_idx": [
+        20
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 20
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        101,
+        101,
+        104,
+        104,
+        105,
+        106,
+        106,
+        106
+      ]
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 1
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 47
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Point"
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 111
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": []
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 113
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 115
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 32
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        22,
+        109,
+        110,
+        112,
+        114,
+        116,
+        117
+      ]
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 36
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 109
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 119
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 37
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 109
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 110
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 112
+    },
+    {
+      "kind": "intN",
+      "n": 16
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        126,
+        8
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 127,
+      "stack_type_id": 130,
+      "stack_width": 3
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 128
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 129
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        130
+      ]
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 77
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        130,
+        132
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        111
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        111
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        1,
+        111,
+        113,
+        134,
+        135,
+        22,
+        32
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 8
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        36,
+        137
+      ]
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 138
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 126
+    },
+    {
+      "kind": "arrayOf",
+      "inner_ty_idx": 8
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        138,
+        139,
+        31,
+        140,
+        141
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        136,
+        142
+      ]
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 1
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 111
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 36
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 146
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 113
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        141
+      ]
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 149
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 151
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 152
+    },
+    {
+      "kind": "lispListOf",
+      "inner_ty_idx": 32
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        144,
+        144,
+        145,
+        147,
+        148,
+        150,
+        153,
+        154
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "OnlyIntN"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 156,
+      "stack_type_id": 131,
+      "stack_width": 2
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        156
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 158,
+      "stack_type_id": 132,
+      "stack_width": 2
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        1,
+        113
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 160
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        156,
+        156,
+        157,
+        157,
+        157,
+        159,
+        159,
+        161,
+        161
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 115,
+      "stack_type_id": 133,
+      "stack_width": 3
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 111,
+      "stack_type_id": 134,
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWideNullables"
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 165,
+      "stack_type_id": 135,
+      "stack_width": 7
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        163,
+        164,
+        165,
+        165,
+        165,
+        166,
+        166
+      ]
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 5,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 2,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 2
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 115,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 133,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "TwoInts"
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 170,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 133,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 111,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 134,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 111,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 134,
+          "stack_width": 2
+        },
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        168,
+        168,
+        169,
+        171,
+        172,
+        173
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        170,
+        111
+      ]
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 0,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 111,
+          "prefix_num": 1,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 134,
+          "stack_width": 2
+        },
+        {
+          "variant_ty_idx": 175,
+          "prefix_num": 2,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 146,
+          "stack_width": 4
+        }
+      ],
+      "stack_width": 5
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "CrazyUnionN"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 37,
+          "prefix_num": 2,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 137,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 178,
+          "prefix_num": 3,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 138,
+          "stack_width": 3
+        },
+        {
+          "variant_ty_idx": 77,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 0,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 4
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "TransferNotification",
+      "type_args_ty_idx": [
+        0
+      ]
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 12,
+          "prefix_num": 2122802415,
+          "prefix_len": 32,
+          "is_prefix_implicit": null,
+          "stack_type_id": 136,
+          "stack_width": 2
+        },
+        {
+          "variant_ty_idx": 180,
+          "prefix_num": 4042322160,
+          "prefix_len": 32,
+          "is_prefix_implicit": null,
+          "stack_type_id": 139,
+          "stack_width": 0
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 36,
+          "prefix_num": 0,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 42,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 8,
+          "prefix_num": 1,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 46,
+          "stack_width": 1
+        },
+        {
+          "variant_ty_idx": 12,
+          "prefix_num": 2,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 136,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        182
+      ]
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 183,
+      "stack_type_id": 140,
+      "stack_width": 4
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        176,
+        177,
+        177,
+        177,
+        181,
+        184,
+        184,
+        184
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWeirdUnions"
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        113,
+        111
+      ]
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 111,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 134,
+          "stack_width": 2
+        },
+        {
+          "variant_ty_idx": 187,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 142,
+          "stack_width": 2
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 113,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 141,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 1,
+          "prefix_num": 1,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 1,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 2
+    },
+    {
+      "kind": "union",
+      "variants": [
+        {
+          "variant_ty_idx": 113,
+          "prefix_num": 2,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 141,
+          "stack_width": 0
+        },
+        {
+          "variant_ty_idx": 115,
+          "prefix_num": 3,
+          "prefix_len": 2,
+          "is_prefix_implicit": true,
+          "stack_type_id": 133,
+          "stack_width": 2
+        },
+        {
+          "variant_ty_idx": 77,
+          "prefix_num": 0,
+          "prefix_len": 1,
+          "is_prefix_implicit": true,
+          "stack_type_id": 0,
+          "stack_width": 1
+        }
+      ],
+      "stack_width": 3
+    },
+    {
+      "kind": "nullable",
+      "inner_ty_idx": 186,
+      "stack_type_id": 143,
+      "stack_width": 9
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        186,
+        186,
+        191,
+        191
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        1,
+        6
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        1
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias2",
+      "type_args_ty_idx": [
+        193
+      ]
+    },
+    {
+      "kind": "AliasRef",
+      "alias_name": "WithWrapperAlias1",
+      "type_args_ty_idx": [
+        193
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "WithWrapper",
+      "type_args_ty_idx": [
+        193
+      ]
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "Wrapper",
+      "type_args_ty_idx": [
+        193
+      ]
+    },
+    {
+      "kind": "intN",
+      "n": 123
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        27,
+        199
+      ]
+    },
+    {
+      "kind": "shapedTuple",
+      "items_ty_idx": [
+        20
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        47,
+        48,
+        31,
+        49,
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        58,
+        59,
+        66,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        1,
+        52
+      ]
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 20
+    },
+    {
+      "kind": "cellOf",
+      "inner_ty_idx": 2
+    },
+    {
+      "kind": "tensor",
+      "items_ty_idx": [
+        205,
+        1
+      ]
+    }
+  ],
+  "struct_instantiations": [
+    {
+      "ty_idx": 15,
+      "struct_name": "TransferNotification<uint32>",
+      "monomorphic_fields_ty_idx": [
+        9
+      ]
+    },
+    {
+      "ty_idx": 59,
+      "struct_name": "Wrapper<int?>",
+      "monomorphic_fields_ty_idx": [
+        47
+      ]
+    },
+    {
+      "ty_idx": 62,
+      "struct_name": "Wrapper<bool?>",
+      "monomorphic_fields_ty_idx": [
+        51
+      ]
+    },
+    {
+      "ty_idx": 66,
+      "struct_name": "Wrapper<Wrapper<bool?>>",
+      "monomorphic_fields_ty_idx": [
+        62
+      ]
+    },
+    {
+      "ty_idx": 65,
+      "struct_name": "WithWrapper<Wrapper<bool?>>",
+      "monomorphic_fields_ty_idx": [
+        66
+      ]
+    },
+    {
+      "ty_idx": 82,
+      "struct_name": "Wrapper<int32>",
+      "monomorphic_fields_ty_idx": [
+        8
+      ]
+    },
+    {
+      "ty_idx": 88,
+      "struct_name": "Wrapper<int64>",
+      "monomorphic_fields_ty_idx": [
+        10
+      ]
+    },
+    {
+      "ty_idx": 87,
+      "struct_name": "WithWrapper<int64>",
+      "monomorphic_fields_ty_idx": [
+        88
+      ]
+    },
+    {
+      "ty_idx": 101,
+      "struct_name": "WrapperN<coins>",
+      "monomorphic_fields_ty_idx": [
+        48
+      ]
+    },
+    {
+      "ty_idx": 104,
+      "struct_name": "WrapperN<slice>",
+      "monomorphic_fields_ty_idx": [
+        49
+      ]
+    },
+    {
+      "ty_idx": 105,
+      "struct_name": "WrapperN<address>",
+      "monomorphic_fields_ty_idx": [
+        52
+      ]
+    },
+    {
+      "ty_idx": 106,
+      "struct_name": "WrapperN<any_address>",
+      "monomorphic_fields_ty_idx": [
+        107
+      ]
+    },
+    {
+      "ty_idx": 135,
+      "struct_name": "Wrapper<Point>",
+      "monomorphic_fields_ty_idx": [
+        111
+      ]
+    },
+    {
+      "ty_idx": 149,
+      "struct_name": "Wrapper<array<int32>>",
+      "monomorphic_fields_ty_idx": [
+        141
+      ]
+    },
+    {
+      "ty_idx": 158,
+      "struct_name": "Wrapper<OnlyIntN>",
+      "monomorphic_fields_ty_idx": [
+        156
+      ]
+    },
+    {
+      "ty_idx": 180,
+      "struct_name": "TransferNotification<void>",
+      "monomorphic_fields_ty_idx": [
+        0
+      ]
+    },
+    {
+      "ty_idx": 183,
+      "struct_name": "Wrapper<int8 | int32 | IncreaseCounter>",
+      "monomorphic_fields_ty_idx": [
+        182
+      ]
+    },
+    {
+      "ty_idx": 194,
+      "struct_name": "Wrapper<int>",
+      "monomorphic_fields_ty_idx": [
+        1
+      ]
+    },
+    {
+      "ty_idx": 198,
+      "struct_name": "Wrapper<(int, coins)>",
+      "monomorphic_fields_ty_idx": [
+        193
+      ]
+    },
+    {
+      "ty_idx": 197,
+      "struct_name": "WithWrapper<(int, coins)>",
+      "monomorphic_fields_ty_idx": [
+        198
+      ]
+    }
+  ],
+  "alias_instantiations": [
+    {
+      "ty_idx": 64,
+      "alias_name": "WithWrapperAlias1<Wrapper<bool?>>",
+      "monomorphic_target_ty_idx": 65
+    },
+    {
+      "ty_idx": 63,
+      "alias_name": "WithWrapperAlias2<Wrapper<bool?>>",
+      "monomorphic_target_ty_idx": 64
+    },
+    {
+      "ty_idx": 86,
+      "alias_name": "WithWrapperAlias1<int64>",
+      "monomorphic_target_ty_idx": 87
+    },
+    {
+      "ty_idx": 85,
+      "alias_name": "WithWrapperAlias2<int64>",
+      "monomorphic_target_ty_idx": 86
+    },
+    {
+      "ty_idx": 196,
+      "alias_name": "WithWrapperAlias1<(int, coins)>",
+      "monomorphic_target_ty_idx": 197
+    },
+    {
+      "ty_idx": 195,
+      "alias_name": "WithWrapperAlias2<(int, coins)>",
+      "monomorphic_target_ty_idx": 196
+    }
+  ],
+  "declarations": [
+    {
+      "kind": "alias",
+      "name": "tuple",
+      "ty_idx": 22,
+      "target_ty_idx": 24
+    },
+    {
+      "kind": "alias",
+      "name": "dict",
+      "ty_idx": 30,
+      "target_ty_idx": 31
+    },
+    {
+      "kind": "struct",
+      "name": "PackOptions",
+      "ty_idx": 45,
+      "fields": [
+        {
+          "name": "skipBitsNValidation",
+          "ty_idx": 5,
+          "default_value": {
+            "kind": "bool",
+            "v": false
+          },
+          "description": "when a struct has a field of type `bits128` and similar (it's a slice under the hood),\nby default, compiler inserts runtime checks (get bits/refs count + compare with 128 + compare with 0);\nthese checks ensure that serialized binary data will be correct, but they cost gas;\nhowever, if you guarantee that a slice is valid (for example, it comes from trusted sources),\nset this option to true to disable runtime checks;\nnote: `int32` and other are always validated for overflow without any extra gas,\nso this flag controls only rarely used `bitsN` type"
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "Storage@me",
+      "ty_idx": 18,
+      "fields": [
+        {
+          "name": "id",
+          "ty_idx": 9
+        },
+        {
+          "name": "counter",
+          "ty_idx": 9
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "IncreaseCounter",
+      "ty_idx": 12,
+      "prefix": {
+        "prefix_num": 2122802415,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11
+        },
+        {
+          "name": "increaseBy",
+          "ty_idx": 9
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "TransferNotification",
+      "ty_idx": 17,
+      "type_params": [
+        "PayloadT"
+      ],
+      "prefix": {
+        "prefix_num": 4042322160,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "payload",
+          "ty_idx": 16
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "Point",
+      "ty_idx": 111,
+      "fields": [
+        {
+          "name": "x",
+          "ty_idx": 1,
+          "default_value": {
+            "kind": "int",
+            "v": "10"
+          }
+        },
+        {
+          "name": "y",
+          "ty_idx": 1,
+          "default_value": {
+            "kind": "int",
+            "v": "20"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "WithWeirdUnions",
+      "ty_idx": 186,
+      "fields": [
+        {
+          "name": "u1",
+          "ty_idx": 188
+        },
+        {
+          "name": "u2",
+          "ty_idx": 189
+        },
+        {
+          "name": "u3",
+          "ty_idx": 190
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "Wrapper",
+      "ty_idx": 61,
+      "type_params": [
+        "T"
+      ],
+      "fields": [
+        {
+          "name": "item",
+          "ty_idx": 60
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "WrapperN",
+      "ty_idx": 102,
+      "type_params": [
+        "T"
+      ],
+      "fields": [
+        {
+          "name": "item",
+          "ty_idx": 103
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "WithWrapper",
+      "ty_idx": 67,
+      "type_params": [
+        "T"
+      ],
+      "fields": [
+        {
+          "name": "nestedW",
+          "ty_idx": 61
+        }
+      ]
+    },
+    {
+      "kind": "alias",
+      "name": "WithWrapperAlias1",
+      "ty_idx": 69,
+      "target_ty_idx": 70,
+      "type_params": [
+        "K"
+      ]
+    },
+    {
+      "kind": "alias",
+      "name": "WithWrapperAlias2",
+      "ty_idx": 71,
+      "target_ty_idx": 72,
+      "type_params": [
+        "T"
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "NestedPartReply",
+      "ty_idx": 25,
+      "fields": [
+        {
+          "name": "n1",
+          "ty_idx": 5
+        },
+        {
+          "name": "n2",
+          "ty_idx": 2
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "PartReply",
+      "ty_idx": 21,
+      "fields": [
+        {
+          "name": "f1",
+          "ty_idx": 1
+        },
+        {
+          "name": "f2",
+          "ty_idx": 22
+        },
+        {
+          "name": "f3",
+          "ty_idx": 26
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "Empty",
+      "ty_idx": 38,
+      "fields": []
+    },
+    {
+      "kind": "enum",
+      "name": "Color",
+      "ty_idx": 39,
+      "encoded_as_ty_idx": 40,
+      "members": [
+        {
+          "name": "Red",
+          "value": "0"
+        },
+        {
+          "name": "Green",
+          "value": "1"
+        },
+        {
+          "name": "Blue",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "kind": "enum",
+      "name": "E0Max",
+      "ty_idx": 41,
+      "encoded_as_ty_idx": 42,
+      "members": [
+        {
+          "name": "ZERO",
+          "value": "0"
+        },
+        {
+          "name": "MAX_INT",
+          "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        }
+      ]
+    },
+    {
+      "kind": "alias",
+      "name": "MyInt32",
+      "ty_idx": 80,
+      "target_ty_idx": 8
+    },
+    {
+      "kind": "struct",
+      "name": "WithCells",
+      "ty_idx": 79,
+      "fields": [
+        {
+          "name": "c1",
+          "ty_idx": 81
+        },
+        {
+          "name": "c2",
+          "ty_idx": 84
+        },
+        {
+          "name": "c3",
+          "ty_idx": 90
+        },
+        {
+          "name": "c4",
+          "ty_idx": 92
+        },
+        {
+          "name": "c5",
+          "ty_idx": 93
+        },
+        {
+          "name": "c6",
+          "ty_idx": 94
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "WithWideNullables",
+      "ty_idx": 165,
+      "fields": [
+        {
+          "name": "pairN",
+          "ty_idx": 163
+        },
+        {
+          "name": "pointN",
+          "ty_idx": 164
+        }
+      ]
+    },
+    {
+      "kind": "struct",
+      "name": "OnlyIntN",
+      "ty_idx": 156,
+      "fields": [
+        {
+          "name": "i",
+          "ty_idx": 47
+        }
+      ]
+    },
+    {
+      "kind": "alias",
+      "name": "TwoInts",
+      "ty_idx": 170,
+      "target_ty_idx": 115
+    },
+    {
+      "kind": "alias",
+      "name": "CrazyUnionN",
+      "ty_idx": 177,
+      "target_ty_idx": 179
+    },
+    {
+      "kind": "struct",
+      "name": "ResetCounter",
+      "ty_idx": 14,
+      "prefix": {
+        "prefix_num": 980758278,
+        "prefix_len": 32
+      },
+      "fields": [
+        {
+          "name": "queryId",
+          "ty_idx": 11
+        }
+      ]
+    },
+    {
+      "kind": "alias",
+      "name": "ResetCounterAlias",
+      "ty_idx": 13,
+      "target_ty_idx": 14
+    }
+  ],
+  "incoming_messages": [
+    {
+      "body_ty_idx": 12
+    },
+    {
+      "body_ty_idx": 13
+    },
+    {
+      "body_ty_idx": 15
+    }
+  ],
+  "incoming_external": [],
+  "outgoing_messages": [],
+  "emitted_events": [],
+  "storage": {
+    "storage_ty_idx": 18
+  },
+  "get_methods": [
+    {
+      "tvm_method_id": 117456,
+      "name": "currentCounter",
+      "parameters": [],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 71937,
+      "name": "initialId",
+      "parameters": [],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 124411,
+      "name": "complexResponse1",
+      "parameters": [],
+      "return_ty_idx": 33
+    },
+    {
+      "tvm_method_id": 120216,
+      "name": "complexResponse2",
+      "parameters": [],
+      "return_ty_idx": 46
+    },
+    {
+      "tvm_method_id": 116153,
+      "name": "complexResponse3",
+      "parameters": [
+        {
+          "name": "returnNull",
+          "ty_idx": 5
+        }
+      ],
+      "return_ty_idx": 78
+    },
+    {
+      "tvm_method_id": 111966,
+      "name": "complexResponse4",
+      "parameters": [],
+      "return_ty_idx": 100
+    },
+    {
+      "tvm_method_id": 107903,
+      "name": "complexResponse5",
+      "parameters": [],
+      "return_ty_idx": 108
+    },
+    {
+      "tvm_method_id": 108929,
+      "name": "arraysResponse1",
+      "parameters": [],
+      "return_ty_idx": 118
+    },
+    {
+      "tvm_method_id": 104930,
+      "name": "arraysResponse2",
+      "parameters": [],
+      "return_ty_idx": 118
+    },
+    {
+      "tvm_method_id": 100803,
+      "name": "arraysResponse3",
+      "parameters": [],
+      "return_ty_idx": 131
+    },
+    {
+      "tvm_method_id": 129316,
+      "name": "arraysResponse4",
+      "parameters": [],
+      "return_ty_idx": 133
+    },
+    {
+      "tvm_method_id": 115143,
+      "name": "shapeResponse1",
+      "parameters": [],
+      "return_ty_idx": 143
+    },
+    {
+      "tvm_method_id": 68858,
+      "name": "lispResponse1",
+      "parameters": [],
+      "return_ty_idx": 155
+    },
+    {
+      "tvm_method_id": 111419,
+      "name": "wideNullableResponse1",
+      "parameters": [],
+      "return_ty_idx": 162
+    },
+    {
+      "tvm_method_id": 99160,
+      "name": "wideNullableResponse2",
+      "parameters": [],
+      "return_ty_idx": 167
+    },
+    {
+      "tvm_method_id": 97257,
+      "name": "unionResponse1",
+      "parameters": [],
+      "return_ty_idx": 174
+    },
+    {
+      "tvm_method_id": 84874,
+      "name": "unionResponse2",
+      "parameters": [],
+      "return_ty_idx": 185
+    },
+    {
+      "tvm_method_id": 89003,
+      "name": "unionResponse3",
+      "parameters": [],
+      "return_ty_idx": 192
+    },
+    {
+      "tvm_method_id": 80154,
+      "name": "complexParams1",
+      "parameters": [
+        {
+          "name": "n1",
+          "ty_idx": 1
+        },
+        {
+          "name": "n2",
+          "ty_idx": 6
+        },
+        {
+          "name": "n3",
+          "ty_idx": 193
+        },
+        {
+          "name": "n4",
+          "ty_idx": 20
+        },
+        {
+          "name": "n5",
+          "ty_idx": 2
+        },
+        {
+          "name": "n6",
+          "ty_idx": 3
+        },
+        {
+          "name": "n7",
+          "ty_idx": 4
+        },
+        {
+          "name": "n8",
+          "ty_idx": 22
+        },
+        {
+          "name": "n9",
+          "ty_idx": 32
+        },
+        {
+          "name": "n10",
+          "ty_idx": 32
+        }
+      ],
+      "return_ty_idx": 194
+    },
+    {
+      "tvm_method_id": 67961,
+      "name": "complexParams2",
+      "parameters": [
+        {
+          "name": "w",
+          "ty_idx": 195
+        },
+        {
+          "name": "part",
+          "ty_idx": 21
+        },
+        {
+          "name": "rem",
+          "ty_idx": 200
+        },
+        {
+          "name": "a",
+          "ty_idx": 201
+        },
+        {
+          "name": "c",
+          "ty_idx": 37
+        },
+        {
+          "name": "empty",
+          "ty_idx": 38
+        },
+        {
+          "name": "et",
+          "ty_idx": 44
+        },
+        {
+          "name": "e",
+          "ty_idx": 43
+        },
+        {
+          "name": "packO",
+          "ty_idx": 45
+        }
+      ],
+      "return_ty_idx": 201
+    },
+    {
+      "tvm_method_id": 72024,
+      "name": "complexParams3",
+      "parameters": [
+        {
+          "name": "tens",
+          "ty_idx": 202
+        },
+        {
+          "name": "expectNull",
+          "ty_idx": 5
+        }
+      ],
+      "return_ty_idx": 203
+    },
+    {
+      "tvm_method_id": 92607,
+      "name": "complexParams4",
+      "parameters": [
+        {
+          "name": "c",
+          "ty_idx": 79
+        },
+        {
+          "name": "cellO",
+          "ty_idx": 95
+        },
+        {
+          "name": "m1",
+          "ty_idx": 96
+        },
+        {
+          "name": "m2",
+          "ty_idx": 97
+        },
+        {
+          "name": "m3",
+          "ty_idx": 99
+        },
+        {
+          "name": "m4",
+          "ty_idx": 99
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 96670,
+      "name": "complexParams5",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 101
+        },
+        {
+          "name": "p2",
+          "ty_idx": 101
+        },
+        {
+          "name": "p3",
+          "ty_idx": 104
+        },
+        {
+          "name": "p4",
+          "ty_idx": 104
+        },
+        {
+          "name": "a1",
+          "ty_idx": 105
+        },
+        {
+          "name": "a2",
+          "ty_idx": 106
+        },
+        {
+          "name": "a3",
+          "ty_idx": 106
+        },
+        {
+          "name": "a4",
+          "ty_idx": 106
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 95410,
+      "name": "arrayParams1",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 22
+        },
+        {
+          "name": "p2",
+          "ty_idx": 109
+        },
+        {
+          "name": "p3",
+          "ty_idx": 110
+        },
+        {
+          "name": "p4",
+          "ty_idx": 112
+        },
+        {
+          "name": "p5",
+          "ty_idx": 114
+        },
+        {
+          "name": "p6",
+          "ty_idx": 116
+        },
+        {
+          "name": "p7",
+          "ty_idx": 117
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 83153,
+      "name": "arrayParams2",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 22
+        },
+        {
+          "name": "p2",
+          "ty_idx": 109
+        },
+        {
+          "name": "p3",
+          "ty_idx": 110
+        },
+        {
+          "name": "p4",
+          "ty_idx": 112
+        },
+        {
+          "name": "p5",
+          "ty_idx": 114
+        },
+        {
+          "name": "p6",
+          "ty_idx": 116
+        },
+        {
+          "name": "p7",
+          "ty_idx": 117
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 87280,
+      "name": "arrayParams3",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 119
+        },
+        {
+          "name": "p2",
+          "ty_idx": 120
+        },
+        {
+          "name": "p3",
+          "ty_idx": 121
+        },
+        {
+          "name": "p4",
+          "ty_idx": 122
+        },
+        {
+          "name": "p5",
+          "ty_idx": 123
+        },
+        {
+          "name": "p6",
+          "ty_idx": 124
+        },
+        {
+          "name": "p7",
+          "ty_idx": 125
+        },
+        {
+          "name": "p8",
+          "ty_idx": 130
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 74775,
+      "name": "arrayParams4",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 119
+        },
+        {
+          "name": "p2",
+          "ty_idx": 120
+        },
+        {
+          "name": "p3",
+          "ty_idx": 121
+        },
+        {
+          "name": "p4",
+          "ty_idx": 122
+        },
+        {
+          "name": "p5",
+          "ty_idx": 123
+        },
+        {
+          "name": "p6",
+          "ty_idx": 124
+        },
+        {
+          "name": "p7",
+          "ty_idx": 125
+        },
+        {
+          "name": "p8",
+          "ty_idx": 130
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 107407,
+      "name": "shapeParams1",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 136
+        },
+        {
+          "name": "p2",
+          "ty_idx": 142
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 90594,
+      "name": "lispParams1",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 144
+        },
+        {
+          "name": "p2",
+          "ty_idx": 144
+        },
+        {
+          "name": "p3",
+          "ty_idx": 145
+        },
+        {
+          "name": "p4",
+          "ty_idx": 147
+        },
+        {
+          "name": "p5",
+          "ty_idx": 148
+        },
+        {
+          "name": "p6",
+          "ty_idx": 150
+        },
+        {
+          "name": "p7",
+          "ty_idx": 153
+        },
+        {
+          "name": "p8",
+          "ty_idx": 154
+        }
+      ],
+      "return_ty_idx": 0
+    },
+    {
+      "tvm_method_id": 114471,
+      "name": "wideNullableParams1",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 156
+        },
+        {
+          "name": "p2",
+          "ty_idx": 156
+        },
+        {
+          "name": "p3",
+          "ty_idx": 157
+        },
+        {
+          "name": "p4",
+          "ty_idx": 157
+        },
+        {
+          "name": "p5",
+          "ty_idx": 157
+        },
+        {
+          "name": "p6",
+          "ty_idx": 159
+        },
+        {
+          "name": "p7",
+          "ty_idx": 159
+        },
+        {
+          "name": "p8",
+          "ty_idx": 161
+        },
+        {
+          "name": "p9",
+          "ty_idx": 161
+        },
+        {
+          "name": "final",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 102212,
+      "name": "wideNullableParams2",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 163
+        },
+        {
+          "name": "p2",
+          "ty_idx": 164
+        },
+        {
+          "name": "p3",
+          "ty_idx": 165
+        },
+        {
+          "name": "p4",
+          "ty_idx": 165
+        },
+        {
+          "name": "p5",
+          "ty_idx": 165
+        },
+        {
+          "name": "p6",
+          "ty_idx": 166
+        },
+        {
+          "name": "p7",
+          "ty_idx": 166
+        },
+        {
+          "name": "final",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 69131,
+      "name": "unionParams1",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 168
+        },
+        {
+          "name": "p2",
+          "ty_idx": 168
+        },
+        {
+          "name": "p3",
+          "ty_idx": 169
+        },
+        {
+          "name": "p4",
+          "ty_idx": 171
+        },
+        {
+          "name": "p5",
+          "ty_idx": 172
+        },
+        {
+          "name": "p6",
+          "ty_idx": 173
+        },
+        {
+          "name": "final",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 81512,
+      "name": "unionParams2",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 176
+        },
+        {
+          "name": "p2",
+          "ty_idx": 177
+        },
+        {
+          "name": "p3",
+          "ty_idx": 177
+        },
+        {
+          "name": "p4",
+          "ty_idx": 177
+        },
+        {
+          "name": "p5",
+          "ty_idx": 181
+        },
+        {
+          "name": "p6",
+          "ty_idx": 184
+        },
+        {
+          "name": "p7",
+          "ty_idx": 184
+        },
+        {
+          "name": "p8",
+          "ty_idx": 184
+        },
+        {
+          "name": "final",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 77385,
+      "name": "unionParams3",
+      "parameters": [
+        {
+          "name": "p1",
+          "ty_idx": 186
+        },
+        {
+          "name": "p2",
+          "ty_idx": 186
+        },
+        {
+          "name": "p3",
+          "ty_idx": 191
+        },
+        {
+          "name": "p4",
+          "ty_idx": 191
+        },
+        {
+          "name": "final",
+          "ty_idx": 1
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 66111,
+      "name": "defaultParams",
+      "parameters": [
+        {
+          "name": "explicit",
+          "ty_idx": 1
+        },
+        {
+          "name": "d1",
+          "ty_idx": 1,
+          "default_value": {
+            "kind": "int",
+            "v": "50"
+          }
+        },
+        {
+          "name": "d2",
+          "ty_idx": 204,
+          "default_value": {
+            "kind": "tensor",
+            "items": [
+              {
+                "kind": "int",
+                "v": "1"
+              },
+              {
+                "kind": "null"
+              }
+            ]
+          }
+        },
+        {
+          "name": "d3",
+          "ty_idx": 144,
+          "default_value": {
+            "kind": "shapedTuple",
+            "items": [
+              {
+                "kind": "int",
+                "v": "1"
+              },
+              {
+                "kind": "int",
+                "v": "2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "d4",
+          "ty_idx": 111,
+          "default_value": {
+            "kind": "object",
+            "struct_name": "Point",
+            "fields": [
+              {
+                "kind": "int",
+                "v": "10"
+              },
+              {
+                "kind": "int",
+                "v": "20"
+              }
+            ]
+          }
+        },
+        {
+          "name": "d5",
+          "ty_idx": 164,
+          "default_value": {
+            "kind": "object",
+            "struct_name": "Point",
+            "fields": [
+              {
+                "kind": "int",
+                "v": "10"
+              },
+              {
+                "kind": "int",
+                "v": "20"
+              }
+            ]
+          }
+        },
+        {
+          "name": "d6",
+          "ty_idx": 164,
+          "default_value": {
+            "kind": "null"
+          }
+        },
+        {
+          "name": "d7",
+          "ty_idx": 177,
+          "default_value": {
+            "kind": "null"
+          }
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 82716,
+      "name": "collisionParams",
+      "parameters": [
+        {
+          "name": "provider",
+          "ty_idx": 1
+        },
+        {
+          "name": "StackReader",
+          "ty_idx": 1
+        },
+        {
+          "name": "address",
+          "ty_idx": 7
+        },
+        {
+          "name": "CellRef",
+          "ty_idx": 205
+        },
+        {
+          "name": "storeTolkAddress",
+          "ty_idx": 5
+        },
+        {
+          "name": "r",
+          "ty_idx": 5
+        },
+        {
+          "name": "c",
+          "ty_idx": 206
+        },
+        {
+          "name": "string",
+          "ty_idx": 32
+        }
+      ],
+      "return_ty_idx": 207
+    },
+    {
+      "tvm_method_id": 117746,
+      "name": "processed?",
+      "parameters": [
+        {
+          "name": "asdf()",
+          "ty_idx": 1
+        },
+        {
+          "name": "isBig?",
+          "ty_idx": 5
+        }
+      ],
+      "return_ty_idx": 1
+    },
+    {
+      "tvm_method_id": 77279,
+      "name": "concatStrings",
+      "parameters": [
+        {
+          "name": "arr",
+          "ty_idx": 117
+        }
+      ],
+      "return_ty_idx": 32
+    },
+    {
+      "tvm_method_id": 78677,
+      "name": "intAndPoint",
+      "parameters": [
+        {
+          "name": "i",
+          "ty_idx": 1
+        },
+        {
+          "name": "p",
+          "ty_idx": 111
+        }
+      ],
+      "return_ty_idx": 0
+    }
+  ],
+  "thrown_errors": [
+    {
+      "kind": "plain_int",
+      "err_code": 123
+    },
+    {
+      "kind": "plain_int",
+      "err_code": 65535
+    }
+  ],
+  "compiler_name": "tolk",
+  "compiler_version": "1.3.0"
+}

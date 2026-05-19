@@ -1,0 +1,89 @@
+{
+  "abi_schema_version": "1.0",
+  "contract_name": "Err",
+  "unique_types": [
+    {
+      "kind": "void"
+    },
+    {
+      "kind": "int"
+    },
+    {
+      "kind": "slice"
+    },
+    {
+      "kind": "cell"
+    },
+    {
+      "kind": "builder"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "coins"
+    },
+    {
+      "kind": "address"
+    },
+    {
+      "kind": "intN",
+      "n": 32
+    },
+    {
+      "kind": "uintN",
+      "n": 32
+    },
+    {
+      "kind": "intN",
+      "n": 64
+    },
+    {
+      "kind": "uintN",
+      "n": 64
+    },
+    {
+      "kind": "callable"
+    },
+    {
+      "kind": "StructRef",
+      "struct_name": "D"
+    }
+  ],
+  "struct_instantiations": [],
+  "alias_instantiations": [],
+  "declarations": [
+    {
+      "kind": "struct",
+      "name": "D",
+      "ty_idx": 13,
+      "fields": [
+        {
+          "name": "n",
+          "ty_idx": 12
+        }
+      ]
+    }
+  ],
+  "incoming_messages": [],
+  "incoming_external": [],
+  "outgoing_messages": [],
+  "emitted_events": [],
+  "storage": {},
+  "get_methods": [
+    {
+      "tvm_method_id": 118291,
+      "name": "acceptingContinuation",
+      "parameters": [
+        {
+          "name": "d",
+          "ty_idx": 13
+        }
+      ],
+      "return_ty_idx": 1
+    }
+  ],
+  "thrown_errors": [],
+  "compiler_name": "tolk",
+  "compiler_version": "1.3.0"
+}
