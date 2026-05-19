@@ -3,7 +3,7 @@
 `tonutils-abi-go` generates Go wrappers from Tolk ABI JSON files.
 
 Generated wrappers are built on top of
-[`github.com/xssnick/tonutils-go`](https://github.com/xssnick/tonutils-go) and
+[`github.com/xssnick/tonutils-go`](https://github.com/xssnick/tonutils-go) v1.17+ and
 include typed contract get-methods, TLB structs, dictionaries, constants, and
 contract exit-code errors.
 
